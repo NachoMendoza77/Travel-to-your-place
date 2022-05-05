@@ -32,6 +32,20 @@ html::-webkit-scrollbar-thumb{
     background: rgb(40, 41, 41);
     border-radius: 5rem;
 }
+/*Scroll Javascript*/
+header.sticky{
+    background:rgba(250, 250, 250, 0.87);
+    box-shadow:0 .30rem 1.25rem rgba(0, 0, 0, 0.356);
+}
+
+header.sticky nav a{
+    color: #000;
+}
+header.sticky .logo{
+    color: #000;
+    opacity: .8;
+}
+
 
 /* HEADER CUSTOM */
 .header{
@@ -46,11 +60,11 @@ html::-webkit-scrollbar-thumb{
     z-index: 1000;
 }
 .header nav a{
-    margin:0 1rem;
-    font-size: 1.9rem;
+    margin:0 2rem;
+    font-size: 1.5rem;
     color:#fff;
-
 }
+
 .header .logo span{
     color: #0ae9e1;
 }
@@ -62,10 +76,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .header nav a:hover{
-    color:#0ae9e1;
-    border-bottom: .5rem solid #fff;
-    padding-bottom: .6rem;
-}
+    color:#0ae9e1;}
 
 
 
@@ -75,7 +86,7 @@ html::-webkit-scrollbar-thumb{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../Travel-to-your-place/home3.jpg) no-repeat;
+    background: url(../Travel-to-your-place/img4.jpg) no-repeat;
     background-size: cover;
     background-position: center;  
 }
@@ -83,12 +94,12 @@ html::-webkit-scrollbar-thumb{
     max-width: 80rem;
 }
 
-.content h1{
+.home .content h1{
     font-size: 6rem;
     color: #fff;
 }
 
-.content p{
+.home .content p{
     font-size: 3rem;
     padding:2rem 0;
     color:#fff;
@@ -100,16 +111,95 @@ html::-webkit-scrollbar-thumb{
     display: flex;
     justify-content: center;
 }
-.btn{
+.box-btn button{
     padding: .8rem 2.2rem;
-    background-color: #fff;
+    background: #fff;
     font-size: 1.5rem;
     color:rgb(26, 25, 25);
     cursor: pointer;
     border-radius: 1.5rem;
 }
-.btn:hover{
+.box-btn button:hover{
     color: #fff;
     background:#0ae9e1;
     transform: scale(1.1);
 }
+
+
+/* CUSTOM PLACES*/
+
+.places {
+    background: rgba(233, 233, 233, 0.877);
+  }
+.places .container{
+    display: flex;
+  }
+
+.places .container .image {
+    max-width: 50rem;
+    margin: 3rem 5rem;
+  }
+
+.places .container .image img{
+    width: 100%;
+    box-shadow: 39px 32px 0px 3px rgba(0,0,0,0.11);
+}
+
+.container .box-text{
+    font-size: 2rem;
+    color:#000;
+    margin: 0 2rem;
+}
+.container .box-text h3{
+    font-size: 3rem;
+    margin-top: 8rem;
+}
+
+
+.container .box-text p{
+    font-size: 1.6rem;
+    margin-top: 5rem;
+}
+
+.container .box-text span{
+    color: #0ae9e1;
+}
+
+/* CUSTOM ABOUT */
+.title{
+    display: flex;
+    margin: 2rem;
+    font-size: 2.2rem;
+    justify-content: center;
+}
+.about .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+
+.about .box-container .box {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+.about .box-container .box img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+
+
+.about .box-container .box h3 {
+    font-size: 2rem;
+    color: #0ae9e1;
+  }
+  
+.about .box-container .box p {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2;
+  }
