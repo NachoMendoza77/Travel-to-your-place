@@ -142,7 +142,7 @@ header.sticky .logo{
 
 .places .container .image img{
     width: 100%;
-    box-shadow: 39px 32px 0px 3px rgba(0,0,0,0.11);
+    box-shadow: 34px 26px 0px 3px rgba(0,0,0,0.11);
 }
 
 .container .box-text{
@@ -153,6 +153,7 @@ header.sticky .logo{
 .container .box-text h3{
     font-size: 3rem;
     margin-top: 8rem;
+    color: #222424e3;
 }
 
 
@@ -161,16 +162,13 @@ header.sticky .logo{
     margin-top: 5rem;
 }
 
-.container .box-text span{
-    color: #0ae9e1;
-}
-
 /* CUSTOM ABOUT */
 .title{
     display: flex;
     margin: 2rem;
     font-size: 2.2rem;
     justify-content: center;
+    color: #222424e3;
 }
 .about .box-container {
     display: grid;
@@ -183,23 +181,87 @@ header.sticky .logo{
 .about .box-container .box {
     text-align: center;
     padding: 1rem;
+    margin: 1rem;
+    border-radius: 2rem;
+  }
+  .about .box-container .box:hover {
+    box-shadow: rgb(10, 233, 225) 0px 20px 30px -10px;
+    transform: scale(1.1);
+
   }
   
 .about .box-container .box img {
-    height: 20rem;
-    width: 20rem;
-    border-radius: 50%;
+    width: 12rem;
     margin-bottom: 1rem;
   }
+  .about .box-container .box img:hover {
+    transform: translateY(0.5rem);
+}
 
 
 .about .box-container .box h3 {
     font-size: 2rem;
-    color: #0ae9e1;
   }
   
 .about .box-container .box p {
     font-size: 1.5rem;
     padding: 1rem 0;
     line-height: 2;
+  }
+
+
+.review-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0 5rem;
+
+}
+
+.reviews .title-review{
+    display: flex;
+    justify-content: center;
+
+    font-size: 2.5rem;
+    color: #222424e3;
+    margin: 2rem 0;
+
+}
+
+.review-box {
+    width: 30rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    background: #eee;
+    border-radius: .5rem;
+    color: #10221b;
+    line-height: 2;
+    margin-bottom: 3rem;
+  
+  }
+  
+
+  
+.reviews .review-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+.reviews .review-user img {
+    height: 7rem;
+    width: 7rem;
+  }
+  
+.reviews .review-user h3 {
+    font-size: 2rem;
+    color: #10221b;
+  }
+  
+.reviews .review-user span {
+    color: #0ae9e1;
+    font-size: 1.5rem;
   }
